@@ -1,6 +1,7 @@
 import axios from "axios";
+import { ResultTerm } from "./types";
 
-export async function searchService(term: string) {
+export async function searchService(term: string): Promise<ResultTerm> {
   try {
     const searchURL = "https://en.wikipedia.org/w/api.php";
     const response = await axios.get(searchURL, {
