@@ -7,3 +7,7 @@ export type SearchItem = {
   title: string;
   pageid: number;
 };
+
+export type WikiSearchBarProps = {
+  onSearch: (term: string) => void;
+};
